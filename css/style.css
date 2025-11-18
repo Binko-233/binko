@@ -100,7 +100,7 @@ body {
 /* 朋友圈内容容器 */
 .moments-container {
     width: 100%;
-    max-width: 600px; /* 限制最大宽度 */
+    max-width: 800px; /* 限制最大宽度 */
     padding: 0 20px; /* 左右留白 */
     box-sizing: border-box;
     background-color: #fff;
