@@ -1,0 +1,681 @@
+/* 基础样式重置 */
+body {
+    margin: 0;
+    padding: 25px 0; /* 上下留白 */
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    min-height: 100vh;
+}
+
+/* 导航栏样式 */
+.main-nav {
+  background: linear-gradient(#fff); 
+  border-bottom: 2px solid #999;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0;
+  height: 70px;
+}
+
+.nav-logo h1 {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold; /* 黑色加粗字体 */
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+  width: 80%;
+}
+
+.login-btn {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* 目录样式 */
+.list{
+    display: flex;
+    flex-direction: column;
+}
+.list-links a{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    margin: 8px 0;
+    text-decoration: none;
+}
+
+/* 朋友圈内容容器 */
+.moments-container {
+    width: 100%;
+    max-width: 600px; /* 限制最大宽度 */
+    padding: 0 20px; /* 左右留白 */
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* 用户信息容器 */
+.user-info {
+    display: flex;
+    align-items: flex-start; /* 顶部对齐 */
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* 头像样式保持不变 */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+/* 用户文字信息容器 */
+.user-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 用户名样式 */
+.username {
+    font-size: 16px;
+    font-weight: 500;
+    color: #576b95;
+    line-height: 1.2;
+}
+
+/* 签名样式 */
+.user-signature {
+    font-size: 12px;
+    color: #888;
+    line-height: 1.3;
+    margin-top: 2px;
+    font-style: italic; /* 斜体效果 */
+    position: relative;
+    padding-left: 8px;
+}
+
+/* 签名前的装饰线（可选） */
+.user-signature::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.moment-content {
+    margin-left: 50px; /* 与头像对齐 */
+}
+
+/* 朋友圈文本样式优化 */
+.moment-text {
+    margin-top: 2px;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    word-break: break-word;
+    text-align: justify;
+    margin-bottom: 10px; /* 段落间距 */
+}
+
+/* 多段落正文样式 */
+.moment-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    margin: 8px 0;
+}
+
+.moment-text span {
+    white-space: pre-line;
+    margin: 0em 0;/* 段间距 */
+}
+
+/* 段落缩进样式 */
+.moment-text p {
+    text-indent: 2em;
+    margin: 0em 0;/* 段间距 */
+    word-break: break-word;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .username {
+        font-size: 17px;
+    }
+    
+    .user-signature {
+        font-size: 13px;
+    }
+    
+    .moment-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}
+
+/* 基础图片容器 */
+.moment-images {
+    display: grid;
+    gap: 5px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+/* 默认3列布局（3张及以上图片） */
+.moment-images {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* 1张图片 - 大图显示 */
+.moment-images img:only-child {
+    grid-column: span 3;
+    aspect-ratio: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* 2张图片布局 - 优先级高于默认 */
+.moment-images img:first-child:nth-last-child(2),
+.moment-images img:first-child:nth-last-child(2) ~ img {
+    grid-column: span 6; /* 在12列网格中各占6 */
+    width: 100%;
+}
+
+/* 3张图片布局 - 明确指定 */
+.moment-images img:first-child:nth-last-child(3),
+.moment-images img:first-child:nth-last-child(3) ~ img {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 4; /* 在12列网格中各占4 */
+}
+
+/* 4张图片布局 - 优先级最高 */
+.moment-images img:first-child:nth-last-child(4),
+.moment-images img:first-child:nth-last-child(4) ~ img {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* 图片通用样式 */
+.moment-images img {
+    width: 100%;
+    aspect-ratio: 1/1; /* 创建1:1宽高比 */
+    object-fit: cover; /* 裁剪图片 */
+    object-position: center;
+    border-radius: 4px;
+    background: #f5f5f5;
+    display: block;
+}
+
+.moment-images img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--img-src);
+    background-size: cover;
+    background-position: center;
+}
+
+/* 智能裁剪方形区域 */
+.moment-images img {
+    width: 100%;
+    aspect-ratio: 1/1; /* 创建1:1宽高比 */
+    object-fit: cover; /* 裁剪图片 */
+    object-position: center;
+    border-radius: 4px;
+    background: #f5f5f5;
+    display: block;
+}
+
+/* 图片内容自适应裁剪 */
+.moment-images img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--img-src);
+    background-size: cover;
+    background-position: center;
+}
+
+/* 根据图片方向智能调整 */
+.moment-images img.portrait {
+    --crop-method: cover;
+    --crop-position: center top; /* 竖图优先保留顶部 */
+}
+
+.moment-images img.landscape {
+    --crop-method: cover;
+    --crop-position: center center; /* 横图居中裁剪 */
+}
+
+.moment-images img.square {
+    --crop-method: cover;
+    --crop-position: center center; /* 方图居中 */
+}
+
+
+/* 多图容器样式 */
+.moment-images:has(img:nth-child(2)) {
+    padding: 3px;
+    border-radius: 8px;
+}
+
+/* 手机端响应式调整 */
+@media (max-width: 600px) {
+    .moment-images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.moment-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.time {
+    font-size: 12px;
+    color: #999;
+}
+
+/* 定位信息样式 */
+.location {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0px;
+    color: #ccc;
+    font-size: 12px;
+}
+
+/* 定位图标主体 */
+.location-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #ccc;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    position: relative;
+    margin-right: 5px;
+}
+
+
+/* 定位图标中心点 */
+.location-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.location-text {
+    font-size: 10px;
+}
+
+
+.icon:hover {
+    opacity: 1;
+}
+
+.divider img {
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    opacity: 0.2;
+}
+
+.meta-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.visibility {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.visibility.private ion-icon {
+    margin-left: 0px;
+    font-size: 14px;
+    color:#ccc;
+}
+
+/* 不同可见性状态的图标 */
+.visibility.public ion-icon {
+    margin-left: 0px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.visibility.partial ion-icon {
+    margin-left: 0px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center; 
+}
+
+/* 基础图标样式 */
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    position: relative;
+}
+
+/* 点赞图标 */
+.icon-like::before {
+    content: "♥";
+    color: #888;
+    font-size: 18px;
+}
+
+.icon-like.active::before {
+    color: #f85e5e;
+}
+
+.icon-comment {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+/* 评论图标主体 */
+.icon-comment::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 16px;
+    background: rgba(105, 114, 149, 0.12);
+    border-radius: 2px;
+}
+
+/* 添加评论图标的小尾巴 */
+.icon-comment::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 80%;
+    transform: translateX(-40%);
+    width: 4px;
+    height: 4px;
+    background-color: rgba(105, 114, 149, 0.12);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+@media only screen and (max-width: 600px) {
+    .actions {
+        gap: 20px; /* 手机端增大点击区域 */
+    }
+    
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-comment {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* 评论图标主体 */
+    .icon-comment::before {
+        width: 24px;
+        height: 18px;
+    }
+
+    /* 添加评论图标的小尾巴 */
+    .icon-comment::after {
+        left: 80%;
+        transform: translateX(-40%);
+        width: 6px;
+        height: 6px;
+    }
+}
+
+/* 可见性图标 */
+.icon-visibility {
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.icon-public::before {
+    content: "🌐";
+    color: #576b95;
+}
+
+.icon-private::before {
+    content: "🔒";
+    color: #888;
+}
+
+.icon-partial::before {
+    content: "👥";
+    color: #f85e5e;
+}
+
+/* 分割线 */
+.divider {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+/* 互动区域样式 */
+.interaction-area {
+    margin-top: 8px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+/* 点赞区域 */
+.likes {
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 6px;
+}
+
+.likes img {
+    width: 16px;
+    height: 16px;
+    margin-top: 0; /* 微调图标位置 */
+}
+
+.likes span {
+    font-size: 13px;
+    color: #576b95;
+    line-height: 1.3; /* 适当行高 */
+}
+
+
+/* 评论项样式 */
+.comments {
+    margin-top: 5px;
+}
+
+.comment {
+    margin-bottom: 5px;
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 0 3px;
+}
+
+.commenter {
+    color: #576b95;
+    margin-right: 1px;
+    font-weight: 500;
+}
+
+.comment-text {
+    color: #333;
+}
+
+/* 回复特定样式 */
+.reply-to {
+    color: #576b95;
+    font-weight: normal;
+}
+
+.reply-separator {
+    color: #333;
+    margin: 0 0px;
+}
+
+.reply-colon {
+    color: #333;
+    margin-right: 3px;
+}
+
+/* 评论输入框 */
+.comment-input {
+    display: flex;
+    margin-top: 8px;
+}
+
+.comment-input input {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 15px;
+    outline: none;
+}
+
+.comment-input input:focus {
+    border-color: #576b95;
+}
+
+.send-btn {
+    background-color: #576b95;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 12px;
+    margin-left: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #465881;
+}
+
+/* 页脚 确保footer始终在底部 */
+.site-footer {
+  border-top: 1px solid #d0d0d0;
+  padding: 15px 0;
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: auto; /* 关键：自动填充剩余空间 */
+}
+
+.footer-content {
+  text-align: center;
+  color: #a8a8a8;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.footer-content p {
+  margin: 8px 0;
+}
+
+/* 适配暗色模式 */
+@media (prefers-color-scheme: dark) {
+    .location {
+        color: #7d9eff;
+    }
+}
