@@ -38,7 +38,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0);
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-weight: bold;
     font-size: 16px;
     padding: 8px 20px;
     border-radius: 4px;
@@ -87,7 +86,7 @@ body {
                 flex-direction: column;
                 height: auto;
                 padding: 15px 0;
-                gap: 15px;
+                gap: 10px;
             }
             
             .nav-logo {
@@ -96,7 +95,7 @@ body {
                 order: 1;
             }
             
-            .login-container {
+            .btn-container {
                 order: 2;
             }
             
@@ -107,6 +106,7 @@ body {
             .back-btn {
                 font-size: 14px;
                 padding: 6px 15px;
+                min-width: 120px;
             }
         }
 
