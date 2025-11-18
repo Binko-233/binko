@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>多多罗朋友圈（伪）</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="moments-container">
+        <!-- 朋友圈动态1 -->
+        <div class="moment">
+            <div class="user-info">
+                <img src="images/avatars/啾飒.jpg" alt="用户头像" class="avatar">
+                <div class="user-text">
+                    <div class="username">啾飒</div>
+                    <div class="user-signature">研究自媒体啾~</div>
+                </div>
+            </div>
+            
+            <div class="moment-content">
+                <div class="moment-text">
+                    <span>格兰岛能用互联网了啾，这几天用新买的设备直播啾，尝试深夜助眠啾，效果很好啾！没想到会有越来越多的人关注啾，还有人、一直给我送礼物啾，谢谢啾！
+                    今晚给这几天的直播剪了合集啾，如果大家喜欢，我会尝试更多方式啾～</span>
+                </div>
+                <div class="moment-images">
+                    <img src="images/posts/助眠封面.png" alt="朋友圈图片">
+                </div>
+                
+                <div class="location">
+                    <span class="location-icon"></span>
+                    <span class="location-text">茶壶别墅树屋</span>
+                </div>
+                
+                <div class="moment-meta">
+                    <div class="meta-left">
+                        <span class="time">30分钟前</span>
+                        <div class="visibility">
+                            <ion-icon name="earth"></ion-icon>
+                            <span class="visibility" data-visibility="private">公开</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <img src="images/icons/like.jpg" alt="点赞" class="icon">
+                        <span class="icon-comment" title="评论"></span>
+                    </div>
+                </div>
+                
+                <!-- 点赞和评论区域 -->
+                <div class="interaction-area">
+                    <div class="likes">
+                        <img src="images/icons/liked.jpg" alt="" class="icon">
+                        <span>赫恩，艾琳娜娜，猪警官等52人觉得很赞</span>
+                    </div>
+                    
+                    <div class="comments">
+                        <div class="comment">
+                            <span class="commenter">赫恩</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">怪不得我看你最近有黑眼圈了，原来这几天在熬夜搞直播赚钱啊？</span>
+                        </div>
+
+                        <!-- 回复评论 -->
+                        <div class="comment">
+                            <span class="commenter">啾飒</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">赫恩</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">赚钱、不寒碜啾💪</span>
+                        </div>
+                        
+                        <div class="comment">
+                            <span class="commenter">艾琳娜娜</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">羽毛笔，棉毛棒，化妆刷，冰山存钱罐敲击……还有迈克狐手偶？花样好丰富啊~</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">啾飒</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">艾琳娜娜</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">有一些是、粉丝的意见啾，用迈克狐手偶做角色扮演、看的人、多了不少啾～</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">猪警官</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">太好了！我正愁睡不着呢，晚上听听试试效果</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">赫恩</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">猪警官</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">可是猪警官，你晚上不是有夜班吗？</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">猪警官</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">赫恩</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">……又不是只有今晚才能听！</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">狐朔</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">路过给个意见，把之前直播片段放出来，那去看直播的人不会变少吗？尤其是这种内容很多重复的视频，观众不一定都会看完，而且我研究过了，那个平台的直播收益比视频高，这样下去赚的只会越来越少啊☝</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">啾飒</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">狐朔</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">谢谢啾，我想过啾，以后一个方法、做一个视频啾，这样、就不会无聊啾，而且、视频是精剪啾，直播可以看完整版啾，视频也可以、让大家随时都可以看啾，这样、有收益、也可以、做纪念啾～</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">猪警官</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">狐朔</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">没错，像我这种不能每晚都守在直播间的人就很受益了，哼哼</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">艾琳娜娜</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">要不要转给<span class="commenter"> @迈克狐 </span>看看？他应该需要这个~😄</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">啾飒</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">艾琳娜娜</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">其实、我还没告诉他直播的事啾……因为每次、都播很晚啾，怕影响他睡觉啾……</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">艾琳娜娜</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">啾飒</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">咦？明明这段时间我睡觉的时候，茶壶别墅有扇窗还是微微亮啊，不是一直失眠到三更半夜吗……？</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">艾琳娜娜</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">我只是睡得少不是失眠……等我再熟悉一下那个视频软件就会去看的。<span class="commenter"> @啾飒 </span></span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">啾飒</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">❤️</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <!-- 朋友圈动态2 -->
+        <div class="moment">
+            <div class="user-info">
+                <img src="images/avatars/迈克狐.jpg" alt="用户头像" class="avatar">
+                <div class="user-text">
+                    <span class="username">迈克狐</span>
+                    <div class="user-signature">迈克狐侦探事务所，详情请联系 @啾飒</div>
+                </div>
+            </div>
+            <div class="moment-content">
+                <div class="moment-text">
+                    <p>现在大家都喜欢把日常琐事发在朋友圈里，不过无论是排版还是方式，我都还是更喜欢纸笔记录一些。</p>
+                    <p>晚上透过窗帘缝隙也能看到树屋那边有隐隐的灯光。这么晚了，啾飒也在努力吗，辛苦了。</p>
+                </div>
+                <div class="moment-meta">
+                    <div class="meta-left">
+                        <span class="time">一周前</span>
+                        <div class="visibility">
+                            <ion-icon name="lock-closed"></ion-icon>
+                            <span class="visibility" data-visibility="private">仅 自己 可见</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <img src="images/icons/like.jpg" alt="点赞" class="icon">
+                        <span class="icon-comment" title="评论"></span>
+                    </div>
+                </div>
+
+                 <!-- 点赞和评论区域 -->
+                <div class="interaction-area">
+                    <div class="comments">
+                        <div class="comment">
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">迈克狐，我可以、看到这些记录的啾</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">谢谢你的礼物啾！迈克狐、也要好好休息啾！❤️</span>
+                        </div>
+
+                        <!-- 回复评论 -->
+                        <div class="comment">
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">不用谢，多亏了你的助眠直播，这几天都睡得很好。❤️</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <!-- 朋友圈动态3 -->
+        <div class="moment">
+            <div class="user-info">
+                <img src="images/avatars/迈克狐.jpg" alt="用户头像" class="avatar">
+                <div class="user-text">
+                    <span class="username">迈克狐</span>
+                    <div class="user-signature">迈克狐侦探事务所，详情请联系 @啾飒</div>
+                </div>
+            </div>
+            <div class="moment-content">
+                <div class="moment-text">
+                    <span>自从自媒体普及了以后要学的东西就多了不少，不仅是手机自带功能的使用还有各种平台功能，学习知识的途径又多了不少……果然，我依然需要不断学习。
+                    </span>
+                </div>
+                <div class="moment-meta">
+                    <div class="meta-left">
+                        <span class="time">十天前</span>
+                        <div class="visibility">
+                            <ion-icon name="people"></ion-icon>
+                            <span class="visibility" data-visibility="people">仅 啾飒 可见</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <img src="images/icons/like.jpg" alt="点赞" class="icon">
+                        <span class="icon-comment" title="评论"></span>
+                    </div>
+                </div>
+
+                 <!-- 点赞和评论区域 -->
+                <div class="interaction-area">
+                    <div class="likes">
+                        <img src="images/icons/liked.jpg" alt="" class="icon">
+                        <span>啾飒</span>
+                    </div>
+                    
+                    <div class="comments">
+                        <div class="comment">
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">迈克狐、视频个人资料，还没有完善啾？要不要、我帮你啾？</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">不用了，那个只是用来看视频的，能用就行。</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">可是啾、为什么这几天看我的直播、不告诉我啾？难道啾……</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">是不是，不想让我知道你在熬夜啾？！</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">……你的推理能力又有长进了呢。</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">啾飒</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">啾！我现在、把视频剪出来了啾，现在可以随时看了啾，好好休息啾！</span>
+                        </div>
+
+                        <!-- 回复评论 -->
+                        <div class="comment">
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">啾飒</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">谢谢你啾飒，你也要好好休息。我买了护眼霜，放在桌子上了，平时可以涂一下。</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">啾飒</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">！！！谢谢迈克狐啾！🥺❤️我用直播赚的钱，买了新食材啾，明天早上、做最近、在网上新学的甜品啾☺️</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">迈克狐</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">啾飒</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">不用谢，期待明天你做的新甜品。☺️❤️</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <footer class="site-footer">
+        <div class="footer-content">
+        <p>网页开发/文案/插图：@Binko &nbsp;&nbsp; 头像：@多多罗</p>
+        <p>本网站内容纯属虚构，一切角色塑造以官方为准</p>
+        </div>
+    </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

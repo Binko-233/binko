@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>土豆岛朋友圈</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="moments-container">
+        <!-- 朋友圈动态1 -->
+        <div class="moment">
+            <div class="user-info">
+                <img src="images/avatars/婕德.jpg" alt="用户头像" class="avatar">
+                <div class="user-text">
+                    <div class="username">婕德</div>
+                    <div class="user-signature">工作勿扰。</div>
+                </div>
+            </div>
+            
+            <div class="moment-content">
+                <p class="moment-text">今早解刨了因为肠癌去世的动物。
+                    中午吃的九转大肠。
+                </p>
+                
+                <div class="location">
+                    <span class="location-icon"></span>
+                    <span class="location-text">土豆岛警局</span>
+                </div>
+                
+                <div class="moment-meta">
+                    <div class="meta-left">
+                        <span class="time">10分钟前</span>
+                        <div class="visibility">
+                            <ion-icon name="earth"></ion-icon>
+                            <span class="visibility" data-visibility="private">公开</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <img src="images/icons/like.jpg" alt="点赞" class="icon">
+                        <span class="icon-comment" title="评论"></span>
+                    </div>
+                </div>
+                
+                <!-- 点赞和评论区域 -->
+                <div class="interaction-area">
+                    <div class="likes">
+                        <img src="images/icons/liked.jpg" alt="" class="icon">
+                        <span> 茜卡菲尔、同事B、警员C等10个人觉得很赞</span>
+                    </div>
+                    
+                    <div class="comments">
+                        <div class="comment">
+                            <span class="commenter">同事A</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">你昨天解刨了头部撞到台阶去世的动物，吃的脑花；前天解刨了大腿穿孔的动物，吃的肘子；大前天解刨了没了个腰的动物，吃的腰子……每天食谱是按照工作来的吗？</span>
+                        </div>
+
+                        <!-- 回复评论 -->
+                        <div class="comment">
+                            <span class="commenter">婕德</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">同事A</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">不好意思。</span>
+                        </div>
+                        
+                        <div class="comment">
+                            <span class="commenter">同事B</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">警察局附近哪里有这么多吃的，推荐一下呗</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">婕德</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">同事B</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">点外卖。大自然餐厅的卤味很不错。</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">茜卡菲尔</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">明天比较有空，约顿饭吗</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">婕德</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">茜卡菲尔</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">👌。</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <!-- 朋友圈动态2 -->
+        <div class="moment">
+            <div class="user-info">
+                <img src="images/avatars/伦纳德.png" alt="用户头像" class="avatar">
+                <div class="user-text">
+                    <div class="username">伦纳德</div>
+                    <div class="user-signature">伦纳德律所有事可私信</div>
+                </div>
+            </div>
+            
+            <div class="moment-content">
+                <p class="moment-text">开完庭才发现女儿给我的卡子别在我的领带上了，哈哈😆
+                </p>
+                
+                <div class="moment-images">
+                    <img src="images/posts/替补用.png" alt="超不经意露出打赢官司的图片">
+                </div>
+                
+                <div class="location">
+                    <span class="location-icon"></span>
+                    <span class="location-text">土豆岛法庭</span>
+                </div>
+                
+                <div class="moment-meta">
+                    <div class="meta-left">
+                        <span class="time">15分钟前</span>
+                        <div class="visibility">
+                            <ion-icon name="earth"></ion-icon>
+                            <span class="visibility" data-visibility="private">公开</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <img src="images/icons/like.jpg" alt="点赞" class="icon">
+                        <span class="icon-comment" title="评论"></span>
+                    </div>
+                </div>
+                
+                <!-- 点赞和评论区域 -->
+                <div class="interaction-area">
+                    <div class="likes">
+                        <img src="images/icons/liked.jpg" alt="" class="icon">
+                        <span>爱妻、同事A、同事B等132人觉得很赞</span>
+                    </div>
+                    
+                    <div class="comments">
+                        <div class="comment">
+                            <span class="commenter">同事A</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">恭喜！</span>
+                        </div>
+
+                        <!-- 回复评论 -->
+                        <div class="comment">
+                            <span class="commenter">伦纳德</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">同事A</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">哪里哪里👋👋</span>
+                        </div>
+                        
+                        <div class="comment">
+                            <span class="commenter">同事B</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">霍，大律师打赢官司不得请客吃饭啊</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">同事C</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">恭喜恭喜！</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">伦纳德</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">同事C</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">哈哈，勉强嬴的而已，没啥值得夸耀的😊</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">同事D</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">恭喜啊！女儿真可爱</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">同事E</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">恭喜！</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">同事F</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">祝贺啊！</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">伦纳德</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">评论太多我就不一一回复了，感谢你们，哈哈👋👋</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+            </div>
+        </div>
+
+        <!-- 朋友圈动态3 -->
+        <div class="moment">
+            <div class="user-info">
+                <img src="images/avatars/达芙妮.jpg" alt="用户头像" class="avatar">
+                <div class="user-text">
+                    <div class="username">达芙妮</div>
+                    <div class="user-signature">今天穿什么好呢……</div>
+                </div>
+            </div>
+            
+            <div class="moment-content">
+                <p class="moment-text">没裙子穿了！！！
+                </p>
+                
+                <div class="moment-images">
+                    <img src="images/posts/替补用.png" alt="挂满裙子的衣柜">
+                </div>
+                
+                <div class="location">
+                    <span class="location-icon"></span>
+                    <span class="location-text">土豆岛某豪宅</span>
+                </div>
+                
+                <div class="moment-meta">
+                    <div class="meta-left">
+                        <span class="time">8小时前</span>
+                        <div class="visibility">
+                            <ion-icon name="earth"></ion-icon>
+                            <span class="visibility" data-visibility="private">公开</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <img src="images/icons/like.jpg" alt="点赞" class="icon">
+                        <span class="icon-comment" title="评论"></span>
+                    </div>
+                </div>
+                
+                <!-- 点赞和评论区域 -->
+                <div class="interaction-area">
+                    <div class="likes">
+                        <img src="images/icons/liked.jpg" alt="" class="icon">
+                        <span>朋友A、朋友B等352人觉得很赞</span>
+                    </div>
+                    
+                    <div class="comments">
+                        <div class="comment">
+                            <span class="commenter">朋友A</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">哇……这还算没裙子穿吗</span>
+                        </div>
+
+                        <!-- 回复评论 -->
+                        <div class="comment">
+                            <span class="commenter">达芙妮</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">朋友A</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">当然算！本季新品我还没买呢</span>
+                        </div>
+                        
+                        <div class="comment">
+                            <span class="commenter">朋友B</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">亲爱的～明天的宴会来吗</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">达芙妮</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">朋友B</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">如果不是我付款的话，我会考虑一下</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">朋友B</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">达芙妮</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">哈哈，怎么会呢，像你这样的大小姐不会在乎那点钱吧</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">达芙妮</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">朋友B</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">我是不在乎，但我也不是傻子，切</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">亚伯</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">小姐，老爷让您尽快回家，给您发消息没有通过，我只好在这里留言了</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">达芙妮</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">达芙妮</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">宵禁不是10点吗？怎么这么早来催</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">亚伯</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">达芙妮</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">今晚有家庭聚餐，需要我去接您吗</span>
+                        </div>
+
+                        <div class="comment">
+                            <span class="commenter">达芙妮</span>
+                            <span class="reply-separator">回复</span>
+                            <span class="commenter">亚伯</span>
+                            <span class="reply-colon">:</span>
+                            <span class="comment-text">随便</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
