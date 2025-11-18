@@ -81,6 +81,35 @@ body {
   transform: translateY(-3px);
 }
 
+/* 移动端适配 */
+        @media (max-width: 600px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+            
+            .nav-logo {
+                position: static;
+                transform: none;
+                order: 1;
+            }
+            
+            .login-container {
+                order: 2;
+            }
+            
+            .nav-logo h1 {
+                font-size: 20px;
+            }
+            
+            .back-btn {
+                font-size: 14px;
+                padding: 6px 15px;
+            }
+        }
+
 /* 目录样式 */
 .list{
     display: flex;
